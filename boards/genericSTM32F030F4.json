@@ -1,0 +1,31 @@
+{
+  "build": {
+    "cpu": "cortex-m0",
+    "extra_flags": "-DSTM32F030x4",
+    "f_cpu": "48000000L",
+    "mcu": "stm32f030f4p6",
+    "ldscript": "stm32f030f4.ld"
+  },
+  "debug": {
+    "openocd_target": "stm32f0x",
+    "svd_path": "STM32F030.svd"
+  },
+  "frameworks": [
+    "mbed"
+  ],
+  "name": "STM32F030F4 (4k RAM. 16k Flash)",
+  "upload": {
+    "disable_flushing": false,
+    "maximum_ram_size": 4096,
+    "maximum_size": 16384,
+    "protocol": "stlink",
+    "protocols": [
+      "stlink"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": false,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.st.com/en/microcontrollers/stm32f030f4.html",
+  "vendor": "Generic"
+}
